@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Spell Correction</title>
+    </head>
+    <body>
+        <form action="/">
+            <button>Home</button>
+        </form>
+
+        <h1>Enter the text to check spellings</h1>
+
+        <form method="post" action="/corrected">
+            <textarea style="font-size: 140%" name="text" placeholder="Enter the text" required="required" rows="6" cols="50">{{input}}</textarea>
+            &emsp;
+            <textarea style="font-size: 140%" placeholder="Corrected text" rows="6" cols="50" readonly>{{output}}</textarea>
+            <br><br>
+            <button style="font-size: 130%">Check text</button>
+            <h3>{{other_words}}</h3>
+        </form>
+        
+    </body>
+</html>

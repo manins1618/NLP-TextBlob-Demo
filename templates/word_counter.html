@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Counter</title>
+    </head>
+
+    <body>
+        <form action="/">
+            <button>Home</button>
+        </form>
+
+        <h1>Enter the text for Count</h1>
+
+        <form method="post" action="/counted">
+            <textarea style="font-size: 140%" name="text" placeholder="Enter the text" required="requried" rows="5" cols="60">{{input}}</textarea>
+            <br><br>
+            <button style="font-size: 120%">Count</button>
+            <p style="font-size: 130%"><b>Characters</b> : {{chars}}</p>
+            <p style="font-size: 130%"><b>Words</b> : {{words}}</p>
+            <p style="font-size: 130%"><b>Sentences</b> : {{sents}}</p>
+            <p style="font-size: 130%"><b>Paragraphs</b> : {{paras}}</p>
+        </form>
+
+        
+    </body>
+</html>

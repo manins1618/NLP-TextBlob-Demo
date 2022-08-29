@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Language Translator</title>
+    </head>
+    <body>
+        <form action="/">
+            <button>Home</button>
+        </form>
+
+        <h1>Enter the text to translate</h1>
+       
+        <form method="post" action="/translated">
+            <label style="font-size: 120%" for="from_lang"><b>Input Language : </b></label>
+            <select style="font-size: 110%" name="from_lang" id="from_lang">
+                <option value="none">Auto Detect</option>
+                <option value="bn">Bengali</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="hi">Hindi</option>
+                <option value="ja">Japenese</option>
+                <option value="ko">Korean</option>
+                <option value="la">Latin</option>
+                <option value="ne">Nepali</option>
+                <option value="es">Spanish</option>
+            </select> &emsp;
+
+            <label style="font-size: 120%" for="to_lang"><b>Ouput Language : </b></label>
+            <select style="font-size: 110%" name="to_lang" id="to_lang">
+                <option value="hi">Hindi</option>
+                <option value="bn">Bengali</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="ja">Japenese</option>
+                <option value="ko">Korean</option>
+                <option value="la">Latin</option>
+                <option value="ne">Nepali</option>
+                <option value="es">Spanish</option>
+            </select><br><br>
+
+            <textarea style="font-size: 140%" name="text" placeholder="Enter the text" required="required" rows="8" cols="50">{{input}}</textarea>
+            &emsp;
+            <textarea style="font-size: 140%" placeholder="Translated Text" rows="8" cols="50" readonly>{{output}}</textarea><br><br>
+            <button style="font-size: 130%">Translate</button>            
+        </form>
+
+        
+    </body>
+</html>
